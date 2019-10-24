@@ -31,6 +31,7 @@ function draw() {
   text("click to start", 75, 200);
 } else if (sceneNum == 1) {
     background(r, g, b);
+  // make background colours random, between 0 and 30
   r = random(0, 30);
   g = random(0, 100);
   b = random(0, 30);
@@ -47,6 +48,7 @@ function draw() {
     text("Thank you for watching!", 20, 150);
     text("Click to restart", 20, 200);
   } else if (sceneNum = 3) {
+    // make code loop around back to the beginning (back to when sceneNum = 0)
   sceneNum = 0;
   }
 
